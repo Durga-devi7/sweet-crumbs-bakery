@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Crumbs Bakery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+
+        <div class="logo">
+            Sweet Crumbs
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" type="button">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                WELCOME TO SWEET CRUMBS
+            </p>
+
+            <h1>
+                Freshly Baked.<br>
+                Made with Love.
+            </h1>
+
+            <p class="hero-description">
+                Delicious cakes, pastries and treats,
+                freshly baked every day for you.
+            </p>
+
+            <a href="#menu" class="hero-button">
+                Explore Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <p class="section-subtitle">
+                OUR STORY
+            </p>
+
+            <h2>
+                Baking Happiness Since Day One
+            </h2>
+
+            <p>
+                At Sweet Crumbs Bakery, we believe every bite should
+                bring a little happiness. We use fresh ingredients
+                and traditional recipes to create delicious cakes,
+                pastries and treats for every occasion.
+            </p>
+
+            <p>
+                From everyday cravings to special celebrations,
+                everything we bake is made with care and love.
+            </p>
+
+            <a href="#menu" class="about-button">
+                Discover Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+
+        <div class="menu-heading">
+
+            <p class="section-subtitle">
+                OUR MENU
+            </p>
+
+            <h2>
+                Freshly Baked Favorites
+            </h2>
+
+            <p>
+                Discover our delicious selection of freshly baked treats.
+            </p>
+
+        </div>
+
+
+        <div class="product-container">
+
+            <!-- Chocolate Cake -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="images/chocolate-cake.jpg"
+                        alt="Chocolate Cake"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <h3 id="cakeName">
+                        Chocolate Cake
+                    </h3>
+
+                    <p>
+                        Rich, moist and delicious chocolate cake.
+                    </p>
+
+                    <span id="cakePrice">
+                        ₹450
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vanilla Cupcake -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="images/vanilla-cupcake.jpg"
+                        alt="Vanilla Cupcake"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Vanilla Cupcake
+                    </h3>
+
+                    <p>
+                        Soft vanilla cupcake with creamy frosting.
+                    </p>
+
+                    <span>
+                        ₹120
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Butter Croissant -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="images/croissant.jpg"
+                        alt="Butter Croissant"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Butter Croissant
+                    </h3>
+
+                    <p>
+                        Flaky, buttery and freshly baked.
+                    </p>
+
+                    <span>
+                        ₹150
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Chocolate Cookies -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="images/cookies.jpg"
+                        alt="Chocolate Cookies"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Chocolate Cookies
+                    </h3>
+
+                    <p>
+                        Crispy cookies loaded with chocolate chips.
+                    </p>
+
+                    <span>
+                        ₹180
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Order Section -->
+    <section class="order-section" id="order">
+
+        <div class="order-box">
+
+            <div class="order-heading">
+
+                <p class="section-subtitle">
+                    PLACE YOUR ORDER
+                </p>
+
+                <h2>
+                    Order Your Treat
+                </h2>
+
+                <p>
+                    Choose your favorite freshly baked item.
+                </p>
+
+            </div>
+
+
+            <!-- Product Selection -->
+            <div class="order-field">
+
+                <label for="productSelect">
+                    Choose Product
+                </label>
+
+                <select id="productSelect">
+
+                    <option
+                        value="Chocolate Cake"
+                        data-price="500"
+                        data-discount="true"
+                    >
+                        Chocolate Cake - ₹500
+                    </option>
+
+                    <option
+                        value="Vanilla Cupcake"
+                        data-price="120"
+                        data-discount="true"
+                    >
+                        Vanilla Cupcake - ₹120
+                    </option>
+
+                    <option
+                        value="Butter Croissant"
+                        data-price="150"
+                        data-discount="true"
+                    >
+                        Butter Croissant - ₹150
+                    </option>
+
+                    <option
+                        value="Chocolate Cookies"
+                        data-price="180"
+                        data-discount="false"
+                    >
+                        Chocolate Cookies - ₹180
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Selected Product Details -->
+            <div class="order-product">
+
+                <h3 id="selectedProduct">
+                    Chocolate Cake
+                </h3>
+
+                <p class="order-price">
+                    Price: ₹<span id="selectedPrice">500</span>
+                </p>
+
+                <p class="discount-text">
+                    20% Offer Price:
+                    ₹<span id="discountedPrice">400</span>
+                </p>
+
+            </div>
+
+
+            <!-- Quantity -->
+            <div class="order-field">
+
+                <label for="quantity">
+                    Quantity
+                </label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    min="1"
+                >
+
+            </div>
+
+
+            <!-- Total -->
+            <div class="order-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="totalPrice">
+                    ₹400
+                </strong>
+
+            </div>
+
+
+            <!-- Customer Name -->
+            <div class="order-field">
+
+                <label for="customerName">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Place Order Button -->
+            <button
+                type="button"
+                id="placeOrderButton"
+            >
+                Place Order
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Offers Section -->
+    <section class="offers" id="offers">
+
+        <div class="offer-content">
+
+            <p class="offer-subtitle">
+                SPECIAL OFFER
+            </p>
+
+            <h2>
+                Sweet Deals Are Here!
+            </h2>
+
+            <p>
+                Get 20% OFF on selected cakes and pastries.
+                Treat yourself to something delicious today!
+            </p>
+
+            <a
+                href="#contact"
+                class="offer-button"
+                id="orderButton"
+            >
+                Order Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <div class="contact-heading">
+
+            <p class="section-subtitle">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                We'd Love to Hear From You
+            </h2>
+
+            <p>
+                Have a question or want to place an order?
+                Send us a message.
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h3>
+                    Visit Our Bakery
+                </h3>
+
+                <p>
+                    📍 123 Sweet Street, Tamil Nadu
+                </p>
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+                <p>
+                    📧 hello@sweetcrumbs.com
+                </p>
+
+
+                <h3>
+                    Opening Hours
+                </h3>
+
+                <p>
+                    Monday - Saturday: 9:00 AM - 9:00 PM
+                </p>
+
+                <p>
+                    Sunday: 10:00 AM - 8:00 PM
+                </p>
+
+            </div>
+
+
+            <!-- Contact Form -->
+<form class="contact-form" id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+
+    <input type="email" placeholder="Your Email" required>
+
+    <input type="text" id="phone" placeholder="Your Phone Number" required>
+
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+
+        </div>
+
+    </section>
+
+
+    <!-- WhatsApp Button -->
+    <a
+        href="https://wa.me/919876543210?text=Hello%20Sweet%20Crumbs%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order."
+        class="whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        💬 Order on WhatsApp
+    </a>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h2>
+                    Sweet Crumbs
+                </h2>
+
+                <p>
+                    Freshly baked treats made with love,
+                    every single day.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#offers">Offers</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+                <p>
+                    📧 hello@sweetcrumbs.com
+                </p>
+
+                <p>
+                    📍 Tamil Nadu, India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Sweet Crumbs Bakery. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>-
